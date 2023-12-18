@@ -14,4 +14,19 @@ private int id;
 private String lastKnownDateOfWatching;
 private String watchHistory;
 private int numberOfWatching;
+public MovieTvLog(int id, String movieTvName, int id2, String lastKnownDateOfWatching, String watchHistory,
+		int numberOfWatching) {
+	super(id, movieTvName);
+	id = id2;
+	this.lastKnownDateOfWatching = lastKnownDateOfWatching;
+	this.watchHistory = watchHistory;
+	this.numberOfWatching = numberOfWatching;
+}
+@Override
+public String toString() {
+	return "{\"MovieTvLog\":{\"id\":\"" + id + "\", \"lastKnownDateOfWatching\":\"" + lastKnownDateOfWatching
+			+ "\", \"watchHistory\":\"" + watchHistory + "\", \"numberOfWatching\":\"" + numberOfWatching + "\"}}\n";
+}
+
+
 }
