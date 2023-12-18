@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 public class MovieTvLog extends MovieAndTv {
 private int id;
 private String lastKnownDateOfWatching;
-private List<String> watchHistory;
+private String watchHistory;
 private int numberOfWatching;
 }

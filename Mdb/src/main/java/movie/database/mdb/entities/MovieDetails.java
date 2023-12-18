@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class MovieDetails extends MovieAndTv {
 private int id;
 private String year;
-private List<String> actors;
+private List<Actors> actors;
 private String director;
-private List<String> movieStuff;
+private String movieStuff;
 }
