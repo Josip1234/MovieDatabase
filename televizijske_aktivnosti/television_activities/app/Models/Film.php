@@ -16,4 +16,7 @@ class Film extends Model
         'name',
         'year'
     ];
+    public function filmovi(){
+        return $this->hasMany(FilmVrsta::class);
+    }
 }

@@ -13,4 +13,7 @@ class VrstaFilma extends Model
     protected $fillable = [
         'naziv'
     ];
+    public function vrste_filmova(){
+        return $this->hasMany(FilmVrsta::class);
+    }
 }
