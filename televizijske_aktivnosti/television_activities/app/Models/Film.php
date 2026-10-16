@@ -17,6 +17,6 @@ class Film extends Model
         'year'
     ];
     public function filmovi(){
-        return $this->hasMany(FilmVrsta::class);
+        return $this->hasMany(FilmVrsta::class,"broj_filma");
     }
 }
