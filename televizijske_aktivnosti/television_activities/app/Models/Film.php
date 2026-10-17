@@ -19,4 +19,7 @@ class Film extends Model
     public function filmovi(){
         return $this->hasMany(FilmVrsta::class,"broj_filma");
     }
+    public function platforme_filmova(){
+        return $this->hasMany(PlatformaFilm::class,"broj_filma");
+    }
 }

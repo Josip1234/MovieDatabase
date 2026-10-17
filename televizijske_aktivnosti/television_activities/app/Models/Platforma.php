@@ -14,4 +14,7 @@ class Platforma extends Model
         "naziv",
         "description"
     ];
+    public function platforme(){
+        return $this->hasMany(PlatformaFilm::class,"broj_platforme");
+    }
 }

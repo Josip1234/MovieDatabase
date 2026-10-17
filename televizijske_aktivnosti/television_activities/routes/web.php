@@ -9,8 +9,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    //$moviesWithGenres=Film::with('filmovi')->get();
-    //dd($moviesWithGenres);
+    //$movies=Film::with(['filmovi','platforme_filmova'])->get();
+    //dd($movies);
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
