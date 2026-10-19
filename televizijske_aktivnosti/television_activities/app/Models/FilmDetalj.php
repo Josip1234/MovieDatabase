@@ -15,4 +15,7 @@ class FilmDetalj extends Model
         "trajanje",
         "opis_filma"
     ];
+    public function detalji(){
+        return $this->hasMany(FilmDetalj::class);
+    }
 }
