@@ -28,4 +28,7 @@ class Person extends Model
         "date_of_issue",
         "employment_status"
     ];
+    public function filmovi(){
+        return $this->hasMany(FilmGlumci::class,"broj_osobe");
+    }
 }

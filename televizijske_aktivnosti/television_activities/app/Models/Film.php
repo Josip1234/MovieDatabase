@@ -25,4 +25,7 @@ class Film extends Model
     public function detalji(){
         return $this->hasMany(FilmDetalji::class);
     }
+    public function glumci(){
+        return $this->hasMany(FilmGlumci::class,"broj_filma");
+    }
 }
