@@ -31,4 +31,7 @@ class Person extends Model
     public function filmovi(){
         return $this->hasMany(FilmGlumci::class,"broj_osobe");
     }
+    public function uloge(){
+        return $this->hasMany(FilmUloge::class,"broj_osobe");
+    }
 }

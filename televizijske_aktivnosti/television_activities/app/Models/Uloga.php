@@ -14,4 +14,7 @@ class Uloga extends Model
         "character",
         "description"
     ];
+    public function uloge(){
+        return $this->hasMany(FilmUloge::class,"broj_uloge");
+    }
 }

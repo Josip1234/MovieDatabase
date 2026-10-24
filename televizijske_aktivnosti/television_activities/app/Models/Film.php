@@ -28,4 +28,7 @@ class Film extends Model
     public function glumci(){
         return $this->hasMany(FilmGlumci::class,"broj_filma");
     }
+    public function uloge(){
+        return $this->hasMany(FilmUloge::class,"id_filma");
+    }
 }
