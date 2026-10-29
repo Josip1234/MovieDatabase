@@ -34,4 +34,7 @@ class Person extends Model
     public function uloge(){
         return $this->hasMany(FilmUloge::class,"broj_osobe");
     }
+    public function person_detail(){
+        return $this->hasOne(PersonDetail::class,"person_id");
+    }
 }
