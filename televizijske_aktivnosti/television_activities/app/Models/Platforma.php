@@ -17,4 +17,7 @@ class Platforma extends Model
     public function platforme(){
         return $this->hasMany(PlatformaFilm::class,"broj_platforme");
     }
+    public function filmovi_pregledi(){
+        return $this->hasMany(FilmoviPregled::class,"id_platforme");
+    }
 }

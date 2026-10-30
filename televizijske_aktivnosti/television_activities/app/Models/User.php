@@ -47,4 +47,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function filmovi_pregledi(){
+        return $this->hasMany(FilmoviPregled::class,"id_usera");
+    }
 }

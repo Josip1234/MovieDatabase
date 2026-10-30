@@ -31,4 +31,7 @@ class Film extends Model
     public function uloge(){
         return $this->hasMany(FilmUloge::class,"id_filma");
     }
+    public function filmovipregled(){
+        return $this->hasMany(FilmoviPregled::class,"id_filma");
+    }
 }

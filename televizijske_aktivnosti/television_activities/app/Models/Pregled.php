@@ -13,4 +13,7 @@ class Pregled extends Model
     protected $fillable = [
       "datum_vrijeme"
     ];
+    public function filmovi_pregled(){
+        return $this->hasMany(FilmoviPregled::class,"id_pregleda");
+    }
 }
