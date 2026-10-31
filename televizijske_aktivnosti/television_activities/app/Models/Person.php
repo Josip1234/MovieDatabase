@@ -37,4 +37,7 @@ class Person extends Model
     public function person_detail(){
         return $this->hasOne(PersonDetail::class,"person_id");
     }
+    public function movie_directors(){
+        return $this->hasMany(MovieDirectors::class,"person_id");
+    }
 }

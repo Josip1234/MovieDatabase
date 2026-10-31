@@ -34,4 +34,7 @@ class Film extends Model
     public function filmovipregled(){
         return $this->hasMany(FilmoviPregled::class,"id_filma");
     }
+    public function moviedirectors(){
+        return $this->hasMany(MovieDirectors::class,"id_filma");
+    }
 }
