@@ -40,4 +40,7 @@ class Person extends Model
     public function movie_directors(){
         return $this->hasMany(MovieDirectors::class,"person_id");
     }
+    public function writers(){
+        return $this->hasMany(Writers::class,"person_id");
+    }
 }

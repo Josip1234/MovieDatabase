@@ -37,4 +37,7 @@ class Film extends Model
     public function moviedirectors(){
         return $this->hasMany(MovieDirectors::class,"id_filma");
     }
+    public function writers(){
+        return $this->hasMany(Writers::class,"id_filma");
+    }
 }
