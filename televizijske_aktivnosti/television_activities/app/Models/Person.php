@@ -43,4 +43,7 @@ class Person extends Model
     public function writers(){
         return $this->hasMany(Writers::class,"person_id");
     }
+    public function stars(){
+        return $this->hasMany(Stars::class,"id_filma");
+    }
 }
