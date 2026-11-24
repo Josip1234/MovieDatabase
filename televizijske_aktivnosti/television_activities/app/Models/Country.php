@@ -17,4 +17,7 @@ class Country extends Model
         "continent",
         "year_of_foundation"
     ];
+    public function earnings_per_states(){
+        return $this->hasMany(EarningsPerState::class,"territory");
+    }
 }

@@ -16,6 +16,6 @@ class FilmDetalj extends Model
         "opis_filma"
     ];
     public function detalji(){
-        return $this->hasMany(FilmDetalj::class);
+        return $this->hasMany(FilmDetalj::class,"broj_detalja");
     }
 }
