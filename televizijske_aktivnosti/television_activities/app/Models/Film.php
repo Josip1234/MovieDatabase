@@ -43,4 +43,7 @@ class Film extends Model
     public function stars(){
         return $this->hasMany(Stars::class,"id_filma");
     }
+    public function financial_data(){
+        return $this->hasMany(FinancialData::class,"film_id");
+    }
 }

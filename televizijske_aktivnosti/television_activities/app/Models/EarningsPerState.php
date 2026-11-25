@@ -20,4 +20,7 @@ class EarningsPerState extends Model
     public function countries(){
         return $this->belongsTo(Country::class);
     }
+    public function financial_data(){
+        return $this->hasMany(FinancialData::class,"earnings_per_state");
+    }
 }

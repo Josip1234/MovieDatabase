@@ -15,4 +15,7 @@ class TheatricalPerformance extends Model
         "international_box_office",
         "worldwide_box_office"
     ];
+    public function financial_data(){
+        return $this->hasMany(FinancialData::class,"theatrical_performance");
+    }
 }

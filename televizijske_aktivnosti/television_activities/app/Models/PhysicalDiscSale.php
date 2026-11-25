@@ -15,4 +15,7 @@ class PhysicalDiscSale extends Model
         "bluray_sales",
         "total"
     ];
+    public function financial_data(){
+        return $this->hasMany(FinancialData::class,"physical_disc_sale");
+    }
 }
