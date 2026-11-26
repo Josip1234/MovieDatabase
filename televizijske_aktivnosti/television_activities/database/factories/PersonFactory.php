@@ -18,7 +18,9 @@ class PersonFactory extends Factory
     public function definition(): array
     {
         return [
-            "state_id"=>fake()->randomElement(["Croatia","Ecuador","Paraguay","Philippines (the)","Slovenia","Timor-Leste","Ukraine","United States of America (the)","United Kingdom of Great Britain and Northern Ireland (the)","Suriname"]),
+            //we do not have state id column anymore and state of birth is not null now
+            //"state_id"=>fake()->randomElement(["Croatia","Ecuador","Paraguay","Philippines (the)","Slovenia","Timor-Leste","Ukraine","United States of America (the)","United Kingdom of Great Britain and Northern Ireland (the)","Suriname"]),
+            "state_of_birth"=>fake()->numberBetween(1,10),
             "id_card_number"=>fake()->randomNumber(),
             "oib_upi"=>fake()->randomNumber(),
             "mbo"=>fake()->randomElement([NULL,fake()->unique()->randomNumber()]), //can be null

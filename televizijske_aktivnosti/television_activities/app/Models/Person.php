@@ -11,7 +11,8 @@ class Person extends Model
     use HasFactory,Notifiable;
     protected $table="person";
     protected $fillable = [
-        "state_id",
+        //"state_id",
+        "state_of_birth",
         "id_card_number",
         "oib_upi",
         "mbo",

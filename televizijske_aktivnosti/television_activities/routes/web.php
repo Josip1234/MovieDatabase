@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('update.person.table');
 
 Route::get('/dashboard', function () {
     //$movies=Film::with(['filmovi','platforme_filmova'])->get();
